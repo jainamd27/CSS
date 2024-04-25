@@ -1,0 +1,19 @@
+SPECIFICITY TREND IN CSS:
+Inline styling > ID selector > Class/Attribute selector > Element selector > Universal selector
+!important can overwrite even inline styling also
+
+Calculation for SPECIFICITY:
+Universal Selector : 0
+Element Selector & pseudo elements: 1
+Class Selector, Attribute Selectors & pseudo elements: 10
+ID Selector: 100
+Inline styles: 1000
+!important : 10000
+
+If you want to calculate the specificity of complex elements then just do addidtion
+Ex.
+h1.yellow
+        {
+            color: aqua;
+        }
+Total specificity = 1 + 10 = 11; gives you more power to overwrite
