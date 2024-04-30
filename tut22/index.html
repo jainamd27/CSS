@@ -27,18 +27,27 @@
             box-sizing: border-box;
             border: 2px solid black;
             width: 80vw;
-            height: 80vh;
+            /* height: 80vh; */
+            min-height: 80vh;
             font-size: 18px;
         }
-        .container > p{
+        .container > div{
             font-size: 2em;
+            width: 50%;
+            border: 2px solid red;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
         }
 
         .mycont{
-            background-color: green;
-            color: red;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: black;
             font-size: 22px;
-            width: 100vh;
+            width: 80vw;
         }
         
     </style>
@@ -48,12 +57,18 @@
         This is a box
     </div>
     <div class="container">
-        <p>
+        <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium cumque, voluptate natus quaerat ex et obcaecati
             vero eligendi nostrum dolorem! In repellat placeat ipsum vitae. Repudiandae voluptas sapiente dignissimos magnam laborum
             natus, vel deserunt quasi explicabo voluptatem, amet nam omnis quam ad, fugit porro odio sunt beatae ab. Earum nobis
             aperiam minus voluptates nisi cum sit?
-        </p>
+            
+            <div>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam alias laborum sequi inventore magni deleniti, quasi aliquam ipsum quisquam iste aut eveniet, in recusandae culpa delectus repellat illum ad, quae natus maiores?
+                </span>
+            </div>
+        </div>
     </div>
     <div class="mycont">
         I am another container
