@@ -9,24 +9,56 @@
         function Calculation() {
           var select = document.getElementById("operation");
           var selected = select.value;
-          var num1 = document.getElementById("num1").value;
-          var num2 = document.getElementById("num2").value;
 
           if(selected == "+")
           {
-             parseFloat(num1);
-             parseFloat(num2);
-             var output = num1 + num2;
-             document.write("The answer is:" + output);
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            parseFloat(num1);
+            parseFloat(num2);
+            var output = parseFloat(num1) + parseFloat(num2);
+            var ans = document.getElementById("ans");
+            ans.innerHTML = "The Answer is: " + output;
+          }
+          if(selected == "-")
+          {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            parseFloat(num1);
+            parseFloat(num2);
+            var output = num1 - num2;
+            var ans = document.getElementById("ans");
+            ans.innerHTML = "The Answer is: " + output;
+          }
+          if(selected == "*")
+          {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            parseFloat(num1);
+            parseFloat(num2);
+            var output = num1 * num2;
+            var ans = document.getElementById("ans");
+            ans.innerHTML = "The Answer is: " + output;
+          }
+          if(selected == "/")
+          {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            parseFloat(num1);
+            parseFloat(num2);
+            var output = num1 / num2;
+            var ans = document.getElementById("ans");
+            ans.innerHTML = "The Answer is: " + output;
           }
         }
     </script>
 </head>
 
 <body>
-    <center><input type="number" id="num1">1st number</center>
+    <h1 align="center">Simple Calculator Project</h1>
+    <center><input type="number" id="num1" required>1st number</center>
     <br>
-    <center><input type="number" id="num2">2nd number</center>
+    <center><input type="number" id="num2" required>2nd number</center>
     <br>
     <center><select id="operation">
             <option value="+">Addition</option>
@@ -34,6 +66,14 @@
             <option value="*">Multiplication</option>
             <option value="/">Division</option>
         </select>
+    </center>
+    <br>
+    <center>
+        <button type="submit" value="submit" onclick="return Calculation()">Submit</button>
+    </center>
+    <br>
+    <center>
+        <h3 id="ans"></h3>
     </center>
 </body>
 
