@@ -1,0 +1,13 @@
+li{
+    list-style: none;
+    background-color: yellow;
+    list-style-position: inside;
+    /* border: 2px solid black; */
+    /* list-style-image: url("https: //tenor.com/bqw20.gif") */
+    list-style-type: "❤️";
+    padding: 23px;
+    width: 100vw;
+}
+ul{
+    display: flex;
+}
