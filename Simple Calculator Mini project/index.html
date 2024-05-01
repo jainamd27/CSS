@@ -7,17 +7,28 @@
     <title>Calculator</title>
     <script>
         function Calculation() {
+          var select = document.getElementById("operation");
+          var selected = select.value;
+          var num1 = document.getElementById("num1").value;
+          var num2 = document.getElementById("num2").value;
 
+          if(selected == "+")
+          {
+             parseFloat(num1);
+             parseFloat(num2);
+             var output = num1 + num2;
+             document.write("The answer is:" + output);
+          }
         }
     </script>
 </head>
 
 <body>
-    <center><input type="number">1st number</center>
+    <center><input type="number" id="num1">1st number</center>
     <br>
-    <center><input type="number" align="center">2nd number</center>
+    <center><input type="number" id="num2">2nd number</center>
     <br>
-    <center><select>
+    <center><select id="operation">
             <option value="+">Addition</option>
             <option value="-">Subtraction</option>
             <option value="*">Multiplication</option>
