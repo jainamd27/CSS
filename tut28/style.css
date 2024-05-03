@@ -1,0 +1,59 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.box
+{
+    border: 2px solid black;
+    height: 433px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+}
+
+.box1{
+    background-color: aqua;
+    /* position: absolute; */
+    position: sticky;
+    top: 0px;
+    height: 111px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box2{
+    background-color: azure;
+    /* position: relative; */
+    top: 34px;
+    left: 56px;
+}
+
+.box3{
+    background-color: antiquewhite;
+    position: fixed;
+    bottom: 0px;
+    right: 3vw;
+    height: 111px;
+    width: 111px;
+    border-radius: 100px;
+}
+
+.box4{
+    background-color: purple;
+}
+
+.parent{
+    padding: 3px;
+    margin: 34px;
+    border: 3px solid purple;
+    /* position: absolute; */
+
+    /* As Exceptions */
+    /* transform: translate(0); */
+    /* filter: invert(0); */
+    /* perspective: 0em; */
+}
